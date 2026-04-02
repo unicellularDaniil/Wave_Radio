@@ -1,0 +1,646 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background: linear-gradient(90deg, #9820BF, #E93A3A);
+    padding: 20px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-container {
+    margin: 0 auto;
+}
+.logo{
+    display: flex;
+    margin-left: 100px;
+}
+.logo img{
+    width: 100%;
+    max-width: 70px;  
+    height: auto;      
+}
+.text-logo{
+    padding-left: 25px;
+}
+
+header h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+
+}
+
+header .slogan {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+/* Линия */
+hr {
+    width: 135  0px;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: 0.3;  
+    border: none;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Меню */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    padding: 0;
+    margin: 0;
+    padding-left: 200px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ff6b6b;
+}
+
+
+
+
+
+
+
+/* ---------- Основной контейнер ---------- */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ---------- Блоки на главной ---------- */
+
+.ful-live-block {
+    background: linear-gradient(90deg, #9820BF, #E93A3A);
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content:space-between;
+    border-radius: 20px;
+}
+
+.live-block h2 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.live-text {
+    font-size: 14px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+
+
+/* ---------- Блок Welcome ---------- */
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #000000;
+    margin: 40px 0 20px 0;
+}
+
+/* Блок Добро пожаловать */
+.welcome-block {
+    background: #FAEEF1;
+    padding: 40px;
+    margin-bottom: 50px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);  /* тень */
+    width: 788px;
+    height: 234px;
+    margin: 0 auto;
+}
+
+.welcome-block p {
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.welcome-block p:last-child {
+    margin-bottom: 0;
+}
+
+/* Flex контейнер для трех блоков */
+.topics-flex {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+/* Карточка темы */
+.topic-card {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+}
+
+.topic-card h3 {
+    color: #101010;
+    font-size: 24px;
+    margin-left: 19px;
+}
+
+.topic-card p {
+    color: #000000;
+    line-height: 1.5;
+    opacity: 0.8;
+    font-size: 18px;
+}
+.topic-card-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+.features-block {
+    background: linear-gradient(90deg, #9820BF, #E93A3A);
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
+}
+
+.features-block h2 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    text-align: center;
+    flex: 1;
+    min-width: 100px;
+}
+
+.feature-number {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.feature-text {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+
+
+/* ---------- Страница программы ---------- */
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-header h2 {
+    color: #000000;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.page-header p{
+    color: #000000;
+    opacity: 0.7;
+    font-style: 16px;
+}
+
+.schedule-list {
+    margin-bottom: 30px;
+}
+
+.schedule-item {
+    background: white;
+    margin-bottom: 40px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);  /* тень */
+}
+
+
+.time-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time {
+    font-weight: bold;
+    color: #C535CD;
+    min-width: 120px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.time img{
+    padding-right: 9px;
+}
+
+
+.program-info {
+    flex: 1;
+}
+
+.program-name {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.program-host {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.program-desc {
+    color: #555;
+}
+
+/* Время */
+.program-boxs{
+    background: linear-gradient(90deg, #9820BF, #E93A3A);
+    width: 148px;
+    height: 76px;
+    border-radius: 10px;
+}
+.program-boxs p{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+}
+.program-boxs h2{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+
+
+
+.weekend-block {
+    background: linear-gradient(90deg, #AD46C0, #E65962);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;    
+}
+
+.weekend-block h3 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.weekend-block p {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 800px;
+    opacity: 0.9;
+}
+
+
+/* ---------- Страница архива ---------- */
+.archive-list {
+    margin-bottom: 30px;
+}
+
+.archive-item {
+    background: white;
+    margin-bottom: 40px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);  /* тень */
+}
+
+.dowland-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.archive-date {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 8px;
+    opacity: 0.5;
+}
+
+.archive-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.archive-desc {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.archive-duration {
+    color: #888;
+    font-size: 14px;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+    color: #666;
+}
+
+/* ---------- Страница контактов ---------- */
+.page-header h2{
+    font-size: 36px;
+}
+
+.contacts-two-columns {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
+}
+
+.contact-form h3 {
+    color: #000000;
+    margin-bottom: 20px;
+        font-size: 28px;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #1b1a1a;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #000000;
+}
+
+.contact-info {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
+}
+.contact-info h2{
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.ful-info-block{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.ful-info-block img{
+    margin-right: 50px;
+}
+
+
+.info-block h3 {
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.hr-contacts{
+    width: 445px;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.6;  
+    border: none;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ---------- Якорные ссылки ---------- */
+.anchor-links {
+    text-align: center;
+    margin: 30px;
+}
+
+.anchor-links a {
+    color: #000000;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.anchor-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #150F2E;
+    color: #ffffff;
+    padding: 50px 20px 30px 20px;
+    margin-top: 0px;
+    width: 100%;
+    clear: both;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* Левая колонка */
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+.contacts-title {
+    color: #D23E9C;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-left p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+}
+.footer-left p img{
+    padding-right: 7px;
+}
+
+/* Правая колонка */
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.social-title {
+    color: #D23E9C;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Линия перед копирайтом */
+.footer-line {
+    max-width: 1400px;
+    margin: 30px auto 20px auto;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Копирайт */
+.copyright {
+    text-align: center;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: #888;
+    margin: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-left {
+        text-align: center;
+    }
+    
+    .footer-right {
+        text-align: center;
+    }
+    
+    .social-icons img {
+        max-width: 150px;
+    }
+}
+
+
+
+/* Чтобы footer всегда был внизу */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
